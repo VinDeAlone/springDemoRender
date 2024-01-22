@@ -1,4 +1,4 @@
-FROM yannoff/maven:3-openjdk-17 as build
+FROM maven:3-openjdk-17 as build
 COPY . .
 RUN mvn clean package -DskipTests
 EXPOSE 8080
